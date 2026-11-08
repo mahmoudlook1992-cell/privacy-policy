@@ -5,24 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سياسة الخصوصية - تطبيق القرآن الكريم</title>
     <style>
-        body { font-family: Tahoma, sans-serif; line-height: 1.8; color: #333; max-width: 800px; margin: 40px auto; padding: 20px; background: #f9f9f9; }
-        h1, h2 { color: #003349; }
-        .container { background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+        :root {
+            --primary-color: #003349;
+            --accent-color: #D4AF37;
+            --bg-color: #f4f7f6;
+            --text-color: #333333;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Cairo', Tahoma, sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-top: 5px solid var(--accent-color);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 20px;
+        }
+        h1 {
+            color: var(--primary-color);
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .update-date {
+            color: #777;
+            font-size: 14px;
+        }
+        h2 {
+            color: var(--primary-color);
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            border-right: 4px solid var(--accent-color);
+            padding-right: 12px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-right: 20px;
+            margin-bottom: 15px;
+        }
+        .contact-box {
+            text-align: center;
+            margin-top: 40px;
+            padding: 25px;
+            background: #eaf2f8;
+            border-radius: 15px;
+        }
+        .btn-email {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: var(--accent-color);
+            color: #002738;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+        .btn-email:hover {
+            background-color: #c19a31;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(212, 175, 55, 0.4);
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 13px;
+            color: #888;
+        }
     </style>
+    <!-- استيراد خط كايو العربي الجميل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <div class="container">
-        <h1>سياسة الخصوصية</h1>
-        <p>نحن في تطبيقنا نُولي اهتماماً بالغاً لخصوصية مستخدمينا. توضح هذه السياسة كيف نتعامل مع بياناتك.</p>
-        
-        <h2>1. جمع البيانات</h2>
-        <p>قد نجمع بيانات الموقع الجغرافي (GPS) فقط لتحديد أوقات الصلاة واتجاه القبلة بدقة، ولا يتم مشاركة هذه البيانات مع أي طرف ثالث.</p>
-        
-        <h2>2. أمان البيانات</h2>
-        <p>نحن نتخذ كافة التدابير الأمنية لحماية معلوماتك وضمان عدم الوصول غيرAuthorized إليها.</p>
-        
-        <h2>3. اتصل بنا</h2>
-        <p>إذا كان لديك أي استفسار، يمكنك مراسلتنا عبر البريد الإلكتروني: support@example.com</p>
+        <header>
+            <h1>سياسة الخصوصية</h1>
+            <p class="update-date">تطبيق القرآن الكريم ومواقيت الصلاة • آخر تحديث: نوفمبر 2026</p>
+        </header>
+
+        <p>نحن في تطبيقنا نُولي اهتماماً بالغاً وحماية فائقة لخصوصية مستخدمينا. توضح سياسة الخصوصية هذه كيفية التعامل مع بياناتك والمعلومات التي يتم جمعها أو استخدامها عند استخدامك للتطبيق.</p>
+
+        <h2>1. جمع واستخدام بيانات الموقع الجغرافي (GPS)</h2>
+        <p>يستخدم التطبيق نظام تحديد الموقع الجغرافي (GPS) حصرياً للأغراض التالية:</p>
+        <ul>
+            <li>تحديد أوقات الصلوات بدقة بناءً على مدينتك الحالية.</li>
+            <li>حساب اتجاه القبلة الصحيح نحو الكعبة المشرفة.</li>
+        </ul>
+        <p><strong>ملاحظة هامة:</strong> يتم معالجة بيانات الموقع محلياً داخل جهازك، ولا نقوم أبدًا ببيع أو مشاركة إحداثيات موقعك الجغرافي مع أي جهة خارجية أو خوادم تتبع خارجية.</p>
+
+        <h2>2. التخزين المحلي والبيانات المحفوظة</h2>
+        <p>يقوم التطبيق بتخزين بعض التفضيلات الإعدادات محلياً على جهازك (مثل: طريقة حساب أوقات الصلاة المفضلة، حالة ختم القرآن، أوقات الأذان، وآخر صفحة قمت بقراءتها) باستخدام تقنية التخزين المحلي (SharedPreferences)، وهذه البيانات لا تترك هاتفك أبداً.</p>
+
+        <h2>3. الأذونات والإشعارات</h2>
+        <p>يطلب التطبيق بعض الأذونات الأساسية لضمان عمل الميزات بالشكل الأمثل:</p>
+        <ul>
+            <li><strong>إذن التنبيهات والإشعارات:</strong> لإرسال تنبيهات أوقات الأذان والعد التنازلي للصلوات وإشعارات الورد اليومي وسورة الكهف.</li>
+            <li><strong>إذن الظهور فوق التطبيقات (Full Screen Intent):</strong> لإيقاظ الشاشة وعرض نافذة الأذان عند وقت الصلاة والهاتف مغلق.</li>
+        </ul>
+
+        <h2>4. أمان وحماية البيانات</h2>
+        <p>نحن نتخذ كافة التدابير التقنية والتنظيمية المناسبة لحماية بياناتك الشخصية وضمان عدم الوصول غير المصرح به إليها أو تعديلها أو الكشف عنها.</p>
+
+        <h2>5. التغييرات على سياسة الخصوصية</h2>
+        <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر لأسباب تقنية أو تنظيمية. سيتم نشر أي تحديثات على هذه الصفحة، وننصحك بمراجعتها بشكل دوري.</p>
+
+        <div class="contact-box">
+            <h2 style="margin-top: 0; border: none; padding: 0;">هل لديك أي استفسار أو اقتراح؟</h2>
+            <p>يسعدنا جداً تواصلك معنا في حال كان لديك أي سؤال بخصوص سياسة الخصوصية أو عمل التطبيق.</p>
+            <a href="mailto:mahoud.kool10@gmail.com" class="btn-email">تواصل معنا عبر البريد الإلكتروني</a>
+        </div>
+
+        <footer>
+            <p>جميع الحقوق محفوظة لتطبيق القرآن الكريم © 2026</p>
+        </footer>
     </div>
+
 </body>
 </html>
